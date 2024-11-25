@@ -1,0 +1,3 @@
+C:/Users/bruni/CLionProjects/projeto_nava/cmake-build-debug/CMakeFiles/projeto_nava.dir
+C:/Users/bruni/CLionProjects/projeto_nava/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/bruni/CLionProjects/projeto_nava/cmake-build-debug/CMakeFiles/rebuild_cache.dir

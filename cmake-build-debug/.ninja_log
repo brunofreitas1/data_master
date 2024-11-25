@@ -1,0 +1,5 @@
+# ninja log v6
+2	1444	7541799033433154	CMakeFiles/projeto_nava.dir/main.c.obj	99c86040c2be32ae
+11	1846	7541858524135127	CMakeFiles/projeto_nava.dir/main.c.obj	99c86040c2be32ae
+43	1847	7541858524444723	CMakeFiles/projeto_nava.dir/func.c.obj	99860410c7d291cd
+1847	2606	7541858542488650	projeto_nava.exe	8a37506d112b049c
