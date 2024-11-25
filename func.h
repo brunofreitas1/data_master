@@ -31,9 +31,11 @@ typedef struct NoDuplo {
 } NoDuplo;
 
 // Funções gerais
+int menu(void);
 void menuPrincipal();
 
 // Funções da árvore binária
+NoArvore* menorNo(NoArvore *raiz);
 NoArvore* inserirArvore(NoArvore *raiz, char *cpf, int registroNum);
 NoArvore* buscarArvore(NoArvore *raiz, char *cpf);
 NoArvore* excluirArvore(NoArvore *raiz, char *cpf);
@@ -43,7 +45,7 @@ void liberarArvore(NoArvore *raiz);
 NoLista* adicionarLista(NoLista *inicio, Registro dados, int registroNum);
 void alterarLista(NoLista *inicio, int registroNum, Registro dados);
 NoLista* buscarLista(NoLista *inicio, int registroNum);
-void listarTodos(*NoLista *inicio)
+void listarTodos(NoLista *inicio);
 
 // Funções da lista duplamente ligada
 NoDuplo* inserirListaDupla(NoDuplo *inicio, char *nome, int registroNum);
