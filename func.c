@@ -321,6 +321,7 @@ void menuPrincipal() {
         switch (opcao) {
             case OP_ADICIONAR: {
                 Registro novoRegistro;
+                printf("\n===================================\n");
                 printf("Digite o CPF: ");
                 scanf("%s", novoRegistro.cpf);
 
@@ -355,24 +356,28 @@ void menuPrincipal() {
 
                 case OP_ALTERAR: {
                     char cpf[12];
+                    printf("\n===================================\n");
                     printf("Digite o CPF para alterar: ");
                     scanf("%s", cpf);
 
                     NoArvore *noEncontrado = buscarArvore(raizArvore, cpf);
                     if (noEncontrado == NULL) {
-                    printf("Erro: CPF não encontrado.\n");
-                    break;
+                        printf("\n===================================\n");
+                        printf("Erro: CPF não encontrado.\n");
+                        break;
                     }
 
                     int registroNum = noEncontrado->registroNum;
                     NoLista *registro = buscarLista(inicioLista, registroNum);
 
                     if (registro == NULL) {
-                    printf("Erro: Registro não encontrado.\n");
-                    break;
+                        printf("\n===================================\n");
+                        printf("Erro: Registro não encontrado.\n");
+                        break;
                     }
 
                     Registro novosDados = registro->dados;
+                    printf("\n===================================\n");
                     printf("Digite o novo Nome (atual: %s): ", novosDados.nome);
                     scanf(" %[^\n]", novosDados.nome);
                     printf("Digite o novo Endereço (atual: %s): ", novosDados.endereco);
@@ -395,13 +400,15 @@ void menuPrincipal() {
 
                 case OP_EXCLUIR: {
                     char cpf[12];
+                    printf("\n===================================\n");
                     printf("Digite o CPF para excluir: ");
                     scanf("%s", cpf);
 
                     NoArvore *noEncontrado = buscarArvore(raizArvore, cpf);
                     if (noEncontrado == NULL) {
-                    printf("Erro: CPF não encontrado.\n");
-                    break;
+                        printf("\n===================================\n");
+                        printf("Erro: CPF não encontrado.\n");
+                        break;
                     }
 
                     int registroNum = noEncontrado->registroNum;
@@ -414,13 +421,14 @@ void menuPrincipal() {
                     if (registro != NULL) {
                     inicioDuplo = excluirListaDupla(inicioDuplo, registro->dados.nome);
                     }
-
+                    printf("\n===================================\n");
                     printf("Registro excluído com sucesso!\n");
                     break;
                 }
 
                 case OP_PROCURAR: {
                 char cpf[12];
+                printf("\n===================================\n");
                 printf("Digite o CPF para procurar: ");
                 scanf("%s", cpf);
 
@@ -434,12 +442,14 @@ void menuPrincipal() {
                 NoLista *registro = buscarLista(inicioLista, registroNum);
 
                 if (registro != NULL) {
+                    printf("\n===================================\n");
                     printf("CPF: %s\n", registro->dados.cpf);
                     printf("Nome: %s\n", registro->dados.nome);
                     printf("Endereço: %s\n", registro->dados.endereco);
                     printf("Telefone: %s\n", registro->dados.telefone);
                     printf("Email: %s\n", registro->dados.email);
                 } else {
+                    printf("\n===================================\n");
                     printf("Erro: Registro não encontrado.\n");
                 }
                 break;
@@ -462,12 +472,14 @@ void menuPrincipal() {
             }
 
                 case OP_SAIR: {
+                printf("\n===================================\n");
                 printf("Encerrando o programa...\n");
                 liberarArvore(raizArvore);
                 break;
             }
 
             default:
+                printf("===================================\n");
                 printf("Opção inválida. Tente novamente.\n");
         }
     }
