@@ -1,12 +1,12 @@
 # Data Master
 
-## ??? Grupo
+## Grupo
 Bruno Brandão
 Gustavo Prado
 Gabriel Henrique Vieira
 Matheus Bidin
 
-## ? Documentação
+## Documentação
 
 ### Introdução
 
