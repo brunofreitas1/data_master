@@ -1,10 +1,10 @@
 # Data Master
 
 ## Grupo
-Bruno Brandão
-Gustavo Prado
-Gabriel Henrique Vieira
-Matheus Bidin
+- Bruno Brandão
+- Gustavo Prado
+- Gabriel Henrique Vieira
+- Matheus Bidin
 
 ## Documentação
 
